@@ -1,0 +1,47 @@
+body{
+    background-image: url(https://wallpapers.com/images/hd/anniversary-with-pokemon-starters-0qkhmao089w2c8wv.jpg);
+}
+
+.pokemon-detail-container {
+    color: white;
+}
+
+.pokemon-title {
+    font-weight: bold;
+    font-size: 75pt;
+}
+
+.pokemon-type {
+    font-size: 30pt;
+    font-weight: bold;
+}
+
+.type-badge {
+    width: 150px;
+    background-color: rgb(70, 70, 255);
+    text-align: center;
+    border-radius: 50px;
+    color: white;
+    font-size: 30pt;
+    font-weight: bold;
+}
+
+.pokemon-weight-height {
+    font-size: 30pt;
+    font-weight: bold;
+}
+
+.evolution-image {
+    width: 700px;
+}
+
+.pokemon-moves {
+    font-size: 15pt;
+}
+
+.back-link {
+    color: yellow;
+    text-decoration: none;
+    font-size: 25pt;
+    font-weight: bold;
+}

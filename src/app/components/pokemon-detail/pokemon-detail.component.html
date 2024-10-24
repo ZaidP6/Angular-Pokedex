@@ -1,0 +1,46 @@
+<div class="">
+  <div class="container d-flex justify-content-center mt-2">
+    @if (pokemon) {
+    <div class="card w-100 mb-3" style="max-width: 540px;">
+      <div class="row g-0">
+        <div class="col-md-4 d-flex flex-column justify-content-center align-items-center p-3">
+          <h3 class="card-title">{{ pokemon.name | titlecase }}</h3>
+          <div>  <!--pokemon?.sprites?.['generation-v']?.['black-white']?.animated?.front_default-->
+            <img 
+            [src]= "getPokemonImage(pokemon.id) || 'https://www.pngarts.com/files/4/Pokeball-Download-Transparent-PNG-Image.png'"
+              alt="{{ pokemon.name }} sprite animado" width="120%">
+          </div>
+        </div>
+        <div class="col-md-8">
+          <div class="card-body">
+            <p><strong>ID:</strong> {{ pokemon.id }}</p>
+            <p><strong>Peso:</strong> {{ pokemon.weight }} kg</p>
+            <div>
+              <h5 class="mb-2">Tipo:</h5>
+              @for (tipo of pokemon.types; track tipo.type.name) {
+              <span [style.backgroundColor]="getColorForType(tipo.type.name)" class="badge me-1">
+                {{ tipo.type.name | titlecase }}
+              </span>
+              }
+            </div>
+            <div>
+              <h5>Juegos:</h5>
+
+              <p>
+                @for (juego of pokemon.game_indices; track juego.version.name) {
+                <span>{{ juego.version.name | titlecase }}</span>
+                @if (juego.version.name != null) {
+                <span>, </span>
+                }
+                }
+              </p>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    }
+  </div>
+
+</div>
