@@ -1,6 +1,9 @@
 # AngularPokedex
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.10.
+## View
+
+![image](https://github.com/user-attachments/assets/0aa97010-95b1-4c12-a967-02b3d24d100b)
+
 
 ## Development server
 
