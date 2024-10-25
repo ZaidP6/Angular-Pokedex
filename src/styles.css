@@ -1,9 +1,10 @@
 body{
-    background-image: url(https://wallpapers.com/images/hd/anniversary-with-pokemon-starters-0qkhmao089w2c8wv.jpg);
+    background-image: url(https://wallpapers.com/images/hd/anniversary-with-pokemon-starters-0qkhmao089w2c8wv.jpg) ;
+   
 }
 
 .pokemon-detail-container {
-    color: white;
+    color: rgb(190, 190, 190);
 }
 
 .pokemon-title {
