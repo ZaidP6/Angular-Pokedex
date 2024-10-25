@@ -7,13 +7,15 @@ import { PokemonDetailComponent } from './components/pokemon-detail/pokemon-deta
 import { provideHttpClient } from '@angular/common/http';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { ItemListComponent } from './components/item-list/item-list.component';
+import { ItemDetailComponent } from './components/item-detail/item-detail.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     PokemonListComponent,
     PokemonDetailComponent,
-    ItemListComponent
+    ItemListComponent,
+    ItemDetailComponent
   ],
   imports: [
     BrowserModule,
