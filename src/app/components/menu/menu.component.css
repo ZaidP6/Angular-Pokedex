@@ -1,0 +1,16 @@
+.nav-link{
+    color: rgb(255, 233, 32);
+    font-size: 20pt;
+}
+    
+    .navbar{
+        height: 150px;
+    }
+.navbar-brand{
+    width: 30%;
+}
+
+.nav-link:hover{
+    font-weight: 600;
+    font-size: 24pt;
+}
