@@ -9,6 +9,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { MenuComponent } from './components/menu/menu.component';
 import { ItemListComponent } from './components/item-list/item-list.component';
 import { ItemDetailComponent } from './components/item-detail/item-detail.component';
+import { GameListComponent } from './components/game-list/game-list.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { ItemDetailComponent } from './components/item-detail/item-detail.compon
     PokemonDetailComponent,
     MenuComponent,
     ItemListComponent,
-    ItemDetailComponent
+    ItemDetailComponent,
+    GameListComponent
   ],
   imports: [
     BrowserModule,
