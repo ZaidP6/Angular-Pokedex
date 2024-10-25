@@ -1,0 +1,47 @@
+<div class="">
+    <div class="container d-flex justify-content-center mt-2">
+      @if (item) {
+      <div class="card w-100 mb-3" style="max-width: 540px;">
+        <div class="row g-0">
+          <div class="col-md-4 d-flex flex-column justify-content-center align-items-center p-3">
+            <h3 class="card-title">{{ item.name | titlecase }}</h3>
+            <div>
+              <img 
+              [src]= "getItemImage(item.name) || 'https://www.pngarts.com/files/4/Pokeball-Download-Transparent-PNG-Image.png'"
+                alt="{{ item.name }} sprite animado" width="120%">
+            </div>
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <p><strong>ID:</strong> {{ item.id }}</p>
+              <p><strong>Categoría:</strong> {{ item.category.name }}</p> 
+              <p><strong>Precio:</strong> {{ item.cost }} kg</p>
+              <div>
+                <h5 class="mb-2">Atributos:</h5>
+                @for (atributo of item.attributes; track atributo.name) {
+                <span>
+                  {{ atributo.name | titlecase }}
+                </span>
+                }
+              </div>
+              <div>
+                <h5>Generaciones:</h5>
+  
+                <p>
+                  @for (juego of item.game_indices; track juego.generation) {
+                  <span>{{ juego.generation.name }}</span>
+                  @if (juego.generation != null) {
+                  <span>, </span>
+                  }
+                  }
+                </p>
+ 
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      }
+    </div>
+  
+</div>

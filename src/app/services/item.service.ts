@@ -2,6 +2,7 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { ItemListResponse } from '../models/item';
 import { Observable } from 'rxjs';
+import { ItemDetailResponse } from '../models/item-detail';
 
 @Injectable({
   providedIn: 'root'
@@ -21,6 +22,10 @@ export class ItemService {
 
   getItemImage(nombre: string): string {
     return `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/${nombre}.png`;
+  }
+
+  getOneItem(id: number): Observable<ItemDetailResponse> {
+    return this.http.get<ItemDetailResponse>(`https://pokeapi.co/api/v2/item/${id}`);
   }
 
 }
