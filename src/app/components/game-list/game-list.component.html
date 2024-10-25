@@ -1,0 +1,7 @@
+<div class="star-container">
+    @for (game of listaJuegos; track game.name) {
+      <div class="star">
+        <a class="enlace" [routerLink]="['/version', game.id]">{{ game.name }}</a>
+      </div>
+    }
+</div>
