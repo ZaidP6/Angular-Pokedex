@@ -6,6 +6,7 @@ import { PokemonListComponent } from './components/pokemon-list/pokemon-list.com
 import { PokemonDetailComponent } from './components/pokemon-detail/pokemon-detail.component';
 import { provideHttpClient } from '@angular/common/http';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { MenuComponent } from './components/menu/menu.component';
 import { ItemListComponent } from './components/item-list/item-list.component';
 import { ItemDetailComponent } from './components/item-detail/item-detail.component';
 
@@ -14,6 +15,7 @@ import { ItemDetailComponent } from './components/item-detail/item-detail.compon
     AppComponent,
     PokemonListComponent,
     PokemonDetailComponent,
+    MenuComponent,
     ItemListComponent,
     ItemDetailComponent
   ],
