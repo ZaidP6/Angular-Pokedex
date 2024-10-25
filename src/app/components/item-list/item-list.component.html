@@ -1,0 +1,9 @@
+<div class="star-container">
+    @for (item of listaItems; track item.name) {
+      <div class="star">
+        <a [routerLink]="['/item', item.id]">
+          <img [src]="item.imgUrl" [alt]="item.name" width="100px"/>
+        </a>
+      </div>
+    }
+</div>
